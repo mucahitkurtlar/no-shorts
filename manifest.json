@@ -1,0 +1,17 @@
+{
+    "name": "No Shorts",
+    "description": "No more YouTube Shorts!",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "permissions": [
+        "webRequest",
+            "*://www.youtube.com/shorts/*",
+            "*://youtube.com/shorts/*",
+        "webRequestBlocking"
+    ]
+}
