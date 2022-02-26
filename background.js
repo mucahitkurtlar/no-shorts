@@ -1,4 +1,4 @@
-var host = "http://www.youtube.com/watch?v=";
+var host = "https://www.youtube.com/watch?v=";
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
         // return host + video id
