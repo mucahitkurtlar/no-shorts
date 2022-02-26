@@ -1,8 +1,7 @@
 var host = "http://www.youtube.com/watch?v=";
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
-        console.log("aboooooo");
-        // return to host + video id
+        // return host + video id
         return {redirectUrl: host + details.url.split("/shorts/")[1]};
     },
     {
